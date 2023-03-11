@@ -15,18 +15,26 @@ export default class Navbar extends Component {
         
             <nav className="navbar navbar-dark bg-dark navbar-expand-lg" style={mystyle}>
             <Link to="/" className="navbar-brand">JobEasy</Link>
-            <div className="collpase navbar-collapse">
+            <div class="container-fluid">
             <ul className="navbar-nav mr-auto">
               <li className="navbar-item">
               <Link to="/" className="nav-link">Jobs</Link>
               </li>
               <li className="navbar-item">
-              <Link to="/create" className="nav-link">Post a listing</Link>
+              <Link to="/postJob" className="nav-link">Post a Listing</Link>
               </li>
               <li className="navbar-item">
-              <Link to="/user" className="nav-link">login/signup</Link>
+              <Link to="/resources" className="nav-link">Resources</Link>
               </li>
-            </ul>
+              <li className="navbar-item">
+              <Link to="/login" className="nav-link">LogIn/SignUp</Link>
+              </li>
+              </ul>
+             
+              <Link to="/profile" type="button" class="btn btn-outline-primary">Profile</Link>
+            
+            
+            
             </div>
           </nav>
         );

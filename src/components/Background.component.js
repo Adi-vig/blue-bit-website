@@ -6,7 +6,7 @@ export default class BG extends Component {
   render () {
     return (
       <>
-        <ParticlesBg type="polygon" bg={true} />
+        <ParticlesBg type="thick" bg={true} />
       </>
     )
   }
