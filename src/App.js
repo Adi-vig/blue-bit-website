@@ -49,16 +49,16 @@ function App() {
   <div className="container" >
    <Router>
     <BG />
-      < Navbar style={{margin:"50px"}}/>
+      < Navbar />
       
       {/* <br/> */}
       {/* <div style={{position:"fixed"}}>Hello world</div> */}
-    <div style={{backgroundColor:"white", opacity:"40%", borderRadius:"10px",margin:"30px",padding:"30px",textAlign:"center"}}> 
-      <div style={{color:"black", opacity:"100%",fontSize:"100px"}}>
+    <div > 
+      <div style={{color:"black", opacity:"100%",fontSize:"20px"}}>
       <Routes>
       <Route path="/" exact Component={jobList}/>
       <Route path="/postJob" exact Component={postJob}/>
-      <Route path="/login" exact Component={logIn}/>
+      <Route path="/login"  exact Component={logIn}/>
       <Route path="/resources" exact Component={resources}/>
       <Route path="/profile" exact Component={profile}/>
       </Routes>
